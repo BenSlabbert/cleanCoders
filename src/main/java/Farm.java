@@ -22,11 +22,19 @@ public class Farm {
         {
             switch(line){
                 case "0": {
-                    System.out.println("No");
+                    System.out.println("Thank you, have a nice day :P");
                     break while_loop;
                 }
                 case "1": {
-                    System.out.println("Yes");
+                    System.out.println("Farmer");
+                    break;
+                }
+                case "2": {
+                    System.out.println("Sheep");
+                    break;
+                }
+                case "3": {
+                    System.out.println("Horses");
                     break;
                 }
                 default:break;
@@ -36,6 +44,11 @@ public class Farm {
         }
     }
     private static void showMenu(){
-        System.out.println("---------------\n1 for yes\n0 for no");
+        System.out.println("---------------\nWelcome to the farm, get details on:" +
+                "\n1: Farmer" +
+                "\n2: Sheep" +
+                "\n3: Horses" +
+
+                "\n0 for exit");
     }
 }
