@@ -10,8 +10,6 @@ public class Farm {
     
     public static void main(String... args) throws IOException {
 
-        System.out.println("hello");
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         showMenu();
 
