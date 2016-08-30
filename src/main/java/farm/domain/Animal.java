@@ -10,4 +10,11 @@ public class Animal {
     }
     
     private long id;
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "id=" + id +
+                '}';
+    }
 }

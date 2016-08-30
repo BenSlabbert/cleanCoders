@@ -11,4 +11,11 @@ public class Farm {
     }
     
     private long id;
+
+    @Override
+    public String toString() {
+        return "Farm{" +
+                "id=" + id +
+                '}';
+    }
 }
