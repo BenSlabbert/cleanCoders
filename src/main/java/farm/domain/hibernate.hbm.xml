@@ -4,7 +4,29 @@
 
 <hibernate-mapping default-cascade="all" package="farm.domain" default-access="field">
 
-    <class name="Animal" table="iram_brandedsignup"></class>
+    <class name="Animal" table="iram_brandedsignup">
+
+        <id name="id" column="id" type="long" unsaved-value="-1">
+            <generator class="identity"/>
+        </id>
+
+    </class>
+
+    <class name="Farm" table="iram_brandedsignup">
+
+        <id name="id" column="id" type="long" unsaved-value="-1">
+            <generator class="identity"/>
+        </id>
+
+    </class>
+
+    <class name="Farmer" table="iram_brandedsignup">
+
+        <id name="id" column="id" type="long" unsaved-value="-1">
+            <generator class="identity"/>
+        </id>
+
+    </class>
 
 
 </hibernate-mapping>
