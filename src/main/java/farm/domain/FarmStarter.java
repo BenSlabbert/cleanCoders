@@ -1,5 +1,8 @@
 package farm.domain;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -17,7 +20,9 @@ public class FarmStarter {
         showMenu();
         
         String line = br.readLine();
-        
+
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+
         
         while_loop: while (line != null) {
             switch (line) {
@@ -26,6 +31,8 @@ public class FarmStarter {
                     break while_loop;
                 }
                 case "1": {
+                    Farm farm = (Farm)context.getBean("Farm");
+                    farm.toString();
                     System.out.println("Farmer");
                     break;
                 }
