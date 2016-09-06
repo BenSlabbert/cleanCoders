@@ -22,8 +22,13 @@ public class FarmStarter {
         String line = br.readLine();
 
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        Farm farm;
+        Farmer farmer;
+        Animal animal;
 
-        
+//        farm = (Farm)context.getBean("Farm");
+//        farmer = (Farmer)context.getBean("Farmer");
+//        animal = (Animal)context.getBean("Animal");
         while_loop: while (line != null) {
             switch (line) {
                 case "0": {
@@ -31,7 +36,7 @@ public class FarmStarter {
                     break while_loop;
                 }
                 case "1": {
-                    Farm farm = (Farm)context.getBean("Farm");
+                    farm = (Farm)context.getBean("Farm");
                     farm.toString();
                     System.out.println("Farmer");
                     break;

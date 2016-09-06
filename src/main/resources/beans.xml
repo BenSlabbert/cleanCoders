@@ -12,6 +12,8 @@
            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd">
 
     <bean id="Farm" class="farm.domain.Farm"/>
+    <bean id="Animal" class="farm.domain.Animal"/>
+    <bean id="Farmer" class="farm.domain.Farmer"/>
 
 
 
